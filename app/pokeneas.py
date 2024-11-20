@@ -51,7 +51,7 @@ POKENEAS = [
         'id': 7,
         'nombre': 'El reposao',
         'altura': 1.30,
-        'habilidad': '',
+        'habilidad': 'Reposar',
         'imagen': 'https://storage.googleapis.com/tallerpokneas/pokeneas/laplata.jpg',
         'frase_filosofica': 'La plata No, la plata no mané, la plata nunca la amará\nla plata no no ocupa pa tener tener nunca la nunca nunca la compra'
     },
