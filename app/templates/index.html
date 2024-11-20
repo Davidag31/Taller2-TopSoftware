@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Pokeneas</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>{{ pokenea.nombre }}</h1>
+      <img src="{{ pokenea.imagen }}" alt="{{ pokenea.nombre }}" />
+      <p><b>Frase filosófica: </b> {{pokenea.frase_filosofica }}</p>
+      <p><b>Habilidad: </b> {{ pokenea.habilidad }}</p>
+      <p><b>Altura: </b> {{ pokenea.altura }} m</p>
+      <p><b>Container ID: </b>{{ container_id }}</p>
+      <div class="random-img">
+        <img
+          id="random_pokemon_image_url_id"
+          src="{{ url_for('static', filename='random.png') }}"
+          alt="Random Pokemon Click Here"
+          onclick="location.reload();"
+        />
+        <h2>Random</h2>
+      </div>
+      <button class="top-left-button" onclick="window.location.href='{{ url_for('main.get_pokenea_json') }}';">Acceder a JSON</button>    </div>
+  </body>
+</html>

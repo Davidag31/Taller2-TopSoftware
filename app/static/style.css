@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #ffeea0;
+  display: block; 
+  overflow-y: auto;
+}
+.container {
+  text-align: center;
+}
+h1 {
+  color: #000000;
+}
+p {
+  color: #000000;
+  white-space: pre-wrap;
+}
+img {
+  max-width: 100%;
+  height: 200px;
+}
+#random_pokemon_image_url_id {
+  cursor: pointer;
+}
+.top-left-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar en línea */
+  font-size: 16px; /* Tamaño de la fuente */
+  margin: 4px 2px; /* Margen */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  border-radius: 12px; /* Bordes redondeados */
+  transition-duration: 0.4s; /* Duración de la transición */
+}
+
+.top-left-button:hover {
+  background-color: white; /* Color de fondo al pasar el cursor */
+  color: black; /* Color del texto al pasar el cursor */
+  border: 2px solid #4CAF50; /* Borde al pasar el cursor */
+}
